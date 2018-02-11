@@ -1,4 +1,8 @@
 import { Component } from '@angular/core';
+import {FormGroup, FormControl, Validators, FormsModule, } from '@angular/forms';
+import { CustomerService } from './services/customer.service';
+
+import { Http, Response, Headers, RequestOptions } from '@angular/http';
 
 @Component({
   selector: 'app-root',
