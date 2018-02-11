@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+body, html {
+    height: 100%;
+}
+
+.main-content {
+    min-height: 100%;
+    padding-bottom: 70px;
+}
+
+.page-footer {
+    height: 70px;
+    margin-top: -70px;
+}

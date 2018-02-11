@@ -9,12 +9,18 @@ import { CustomerService } from './services/customer.service';
 import { HttpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms';
 import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
+import { CallsComponent } from './calls/calls.component';
+import { CpcComponent } from './cpc/cpc.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
-    NavbarComponent
+    NavbarComponent,
+    FooterComponent,
+    CallsComponent,
+    CpcComponent
   ],
   imports: [
     BrowserModule,
