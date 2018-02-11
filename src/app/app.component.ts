@@ -4,6 +4,8 @@ import { CustomerService } from './services/customer.service';
 
 import { Http, Response, Headers, RequestOptions } from '@angular/http';
 
+import { Routes, RouterModule } from '@angular/router';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
