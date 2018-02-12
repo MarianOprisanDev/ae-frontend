@@ -1,3 +1,31 @@
-<p>
-  cpc works!
-</p>
+<div class="container card">
+  <h5 class="card-content">This will be a filterable list</h5>
+</div>
+
+<div class="container">
+  <ul *ngFor="let customer of customers">
+    <div class="card">
+        <div class="card-content">
+      <li>{{ customer.city }}: {{ customer.name }}
+        <span (click)="showMore()" class="right green-text"> <i class="fa fa-plus"></i> </span> </li>
+        <div class="row" *ngIf="showMore">
+          <div class="row">
+            <form class="col s12">
+              <div class="row left">
+                  <div class="col s4 input-field" >
+                    <input id="bw_count" type="number" step="any" required>
+                    <label for="bw">B/W</label>
+                  </div>
+                  <div class="col s4 input-field">
+                    <input id="clr" type="number" step="any" required >
+                    <label for="clr">CLR</label>
+                  </div>
+              </div>
+            </form>
+          </div>
+          <button class="btn btn-primary right"> <i class="fa fa-check"></i> </button>
+        </div>
+      </div>
+    </div>
+  </ul>
+</div>

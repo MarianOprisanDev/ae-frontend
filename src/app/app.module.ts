@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
 import { CustomerService } from './services/customer.service';
+import { CallService } from './services/call.service';
+
 import { HttpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -47,7 +49,7 @@ const routes: Routes = [
     FormsModule,
     RouterModule.forRoot( routes, { enableTracing: false })
   ],
-  providers: [CustomerService],
+  providers: [CustomerService, CallService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
